@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+#video-container {
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+      position: absolute;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
