@@ -2,10 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
-var is_a_commie = false;
+class App extends React.Component {
 
-function AnswerFunc() {
-  if (is_a_commie) {
+  constructor() {
+    super()
+    this.state = {
+      is_a_commie: false,
+    }
+  }
+
+// var is_a_commie = false;
+
+AnswerFunc() {
+  if (this.state.is_a_commie) {
     document.body.style.backgroundColor = "red";
 
     return (
@@ -46,12 +55,12 @@ function AnswerFunc() {
 }
 
 
-function App() {
+render() {
   return (
     <div className="App">
-      {AnswerFunc()}
+      {this.AnswerFunc()}
     </div>
   );
 }
-
+}
 export default App;
