@@ -66,3 +66,15 @@ video {
 .commie a:visited{
   color: #eee5e9;
 }
+
+.not_commie {
+  color: #7c7c7c;
+}
+
+.not_commie a:link{
+  color: #7c7c7c;
+}
+
+.not_commie a:visited{
+  color: #eee5e9;
+}
